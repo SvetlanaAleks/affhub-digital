@@ -5,174 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="https://affhub.net/app/themes/affhub/assets/img/favicon.ico">
-    <title>Affhub-meetup-Tbilisi</title>
-    <script>var EVERlocale = "english";</script>
-    <style>
-      #preloader {
-      	background: #161032;
-      	position: fixed;
-      	display: flex;
-      	align-items: center;
-      	justify-content: center;
-      	left: 0;
-      	bottom: 0;
-      	right: 0;
-      	top: 0;
-      	z-index: 100;
-      	transition: 1s all;
-      	opacity: 1;
-      	visibility: visible
-      }
-      
-      #preloader.cansel {
-      	opacity: 0;
-      	visibility: hidden
-      }
-      
-      .preloader {
-      	display: flex;
-      	align-items: center;
-      	justify-content: center
-      }
-      
-      .preloader__item--1 {
-      	width: 20px;
-      	height: 20px;
-      	background: #f583a1;
-      	border-radius: 50%;
-      	background-color: #ffa800;
-      	margin: 7px;
-      	display: flex;
-      	justify-content: center;
-      	align-items: center
-      }
-      
-      @keyframes scale {
-      	0% {
-      		transform: scale(1)
-      	}
-      
-      	50%,
-      	75% {
-      		transform: scale(2.5)
-      	}
-      
-      	78%,
-      	100% {
-      		opacity: 0
-      	}
-      }
-      
-      .preloader__item--1:before {
-      	content: '';
-      	width: 20px;
-      	height: 20px;
-      	border-radius: 50%;
-      	background-color: #ffa800;
-      	opacity: .7;
-      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
-      	animation-delay: 200ms;
-      	transition: .5s all ease;
-      	transform: scale(1)
-      }
-      
-      .preloader__item--2 {
-      	width: 20px;
-      	height: 20px;
-      	background: #f583a1;
-      	border-radius: 50%;
-      	background-color: #ff57c6;
-      	margin: 7px;
-      	display: flex;
-      	justify-content: center;
-      	align-items: center
-      }
-      
-      @keyframes scale {
-      	0% {
-      		transform: scale(1)
-      	}
-      
-      	50%,
-      	75% {
-      		transform: scale(2.5)
-      	}
-      
-      	78%,
-      	100% {
-      		opacity: 0
-      	}
-      }
-      
-      .preloader__item--2:before {
-      	content: '';
-      	width: 20px;
-      	height: 20px;
-      	border-radius: 50%;
-      	background-color: #ff57c6;
-      	opacity: .7;
-      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
-      	animation-delay: 400ms;
-      	transition: .5s all ease;
-      	transform: scale(1)
-      }
-      
-      .preloader__item--3 {
-      	width: 20px;
-      	height: 20px;
-      	background: #f583a1;
-      	border-radius: 50%;
-      	background-color: #ac65c8;
-      	margin: 7px;
-      	display: flex;
-      	justify-content: center;
-      	align-items: center
-      }
-      
-      @keyframes scale {
-      	0% {
-      		transform: scale(1)
-      	}
-      
-      	50%,
-      	75% {
-      		transform: scale(2.5)
-      	}
-      
-      	78%,
-      	100% {
-      		opacity: 0
-      	}
-      }
-      
-      .preloader__item--3:before {
-      	content: '';
-      	width: 20px;
-      	height: 20px;
-      	border-radius: 50%;
-      	background-color: #ac65c8;
-      	opacity: .7;
-      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
-      	animation-delay: 600ms;
-      	transition: .5s all ease;
-      	transform: scale(1)
-      }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180331414-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-180331414-1');
-    </script>
+    <title>Affhub-Digital</title>
   </head>
   <body>
     <section class="header">
       <div class="header-menu">
-        <div class="wrapper"><a class="logo" href="https://affhub.net"><img src="img/svg/logo.svg" alt="Affhub"></a>
+        <div class="wrapper"><a class="logo" href="https://affhub.net"><img src="/img/svg/logo.svg" alt="Affhub"></a>
           <div class="mobile-button"></div>
           <div class="mobile-hide">
             <ul class="navigation navigation-container">
@@ -211,7 +51,7 @@
             </ul>
           </div>
           <div class="navigation-mobile">
-            <div class="logo pull-left"><img src="img/svg/logo.svg" alt="Affhub"></div>
+            <div class="logo pull-left"><img src="/img/svg/logo.svg" alt="Affhub"></div>
             <div class="navigation-close pull-right"></div>
             <div class="clearfix"></div>
             <ul class="links navigation-container">
@@ -273,171 +113,126 @@
         </div>
       </div>
       <div class="wrapper">
-        <div class="header__wrapper">
-          <div class="header__left">
-            <div class="header__info-top">
-              <h1 class="header__title title-color">First in Georgia!</h1>
-              <p class="header__desc">The top affiliate event</p>
-              <p class="header__info">Meetup + Afterparty</p><a class="header__btn header__btn--desc btn-main js-scroll" href="#check-in">Check-in</a>
+        <div class="header__top">
+          <div class="header__left date"><img class="date__ico" src="/img/svg/date.svg" alt="date">
+            <div class="date__desc">
+              <p class="date__text">10 <span>августа</span></p>
+              <p class="date__text">19:00 <span>вт</span></p>
             </div>
-            <div class="header__info-bottom details">
-              <div class="details__top"><img class="details__date" src="img/date.svg" alt="04">
-                <div class="details__desc">
-                  <p class="details__month">June</p>
-                  <p class="details__time">At 1pm on Friday</p>
-                </div>
-              </div>
-              <div class="details__bottom"><img src="img/tbilisi.png" alt="tbilisi">
-                <div class="details__place">
-                  <p class="details__place-text">Tbilisi, Republic Multifunctional Event&nbsp;Space</p><a class="details__link" href="https://goo.gl/maps/aprQYc1EApKfbFcFA" target="_blank">On the map<i class="fico fico-arrow"></i></a>
-                </div>
-              </div>
-            </div><a class="header__btn header__btn--mob btn-main js-scroll" href="#check-in">Check-in</a>
           </div>
-          <div class="header__right"><img src="img/header_title.svg" alt=""></div>
+          <div class="header__right place"><img class="place__ico" src="/img/svg/place.svg" alt="place">
+            <p class="place__text">Just in space<span>ул. Братская, 6</span></p>
+          </div>
+        </div>
+        <div class="header__logo"><img src="/img/svg/digital-meetup-logo.svg" alt=""></div>
+        <button class="header__btn">Регистрация</button>
+        <h1 class="header__title title-color">Погружение в нишу CPA для&nbsp;маркетологов и таргетологов</h1>
+        <div class="header__main"><img src="/img/svg/ico.svg" alt="">
+          <p class="header__info">Количество мест ограничено<br>Билеты платные</p>
         </div>
       </div>
     </section>
     <section class="event-description">
       <div class="wrapper">
-        <h2 class="event-description__title title-color">The description of event:</h2>
-        <div class="event-description__wrapper">
-          <div class="event-description__row">
-            <h4 class="event-description__subtitle">Why do you think you need to be on Affhub?</h4>
-            <div class="event-description__info">
-              <p class="event-description__text">Affhub is the arbitration community which affiliates with affiliated marketing members throughout the world. Our objectives are maximizing the usefulness of the reports and networking on the hot afterparties. </p>
-              <p class="event-description__text">How would you like to get the actual tips and secrets of the top affiliated marketing? Would you like to make new acquaintance in this area? Are you looking for a team or profitable acquaintance?  Come to AFFHUB!</p>
-            </div>
-          </div>
-          <div class="event-description__row">
-            <h4 class="event-description__subtitle">Affhub Meetup Tbilisy</h4>
-            <div class="event-description__info">
-              <p class="event-description__text">Is a prominent event for webmasters and top-affiliates of Georgia. This includes  reports from tops, advanced networking and pleasant afterparty with smoky hookahs and all-in  bar entertainment.</p>
-            </div>
-          </div>
-        </div><a class="event-description__link" href="https://calendar.google.com/calendar/u/0/r" target="_blank">Add a reminder to your calendar<i class="fico fico-arrowS"></i></a>
-      </div>
-    </section>
-    <section class="entertaining-program">
-      <div class="wrapper">
-        <h2 class="entertaining-program__title title-color">Affhub Meetup Tbilisi is:</h2>
-        <div class="entertaining-program__list">
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_1.svg" alt="ico"></div>
-            <p class="program-item__text">Meetup + Afterparty</p>
-          </div>
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_2.svg" alt="ico"></div>
-            <p class="program-item__text">Four reports from affiliated marketing tops </p>
-          </div>
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_3.svg" alt="ico"></div>
-            <p class="program-item__text">Entertainment</p>
-          </div>
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_4.svg" alt="ico"></div>
-            <p class="program-item__text">TOP niches: Gambling, Nutra, Crypto and PDL</p>
-          </div>
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_5.svg" alt="ico"></div>
-            <p class="program-item__text">Advanced networking</p>
-          </div>
-          <div class="program-item">
-            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_6.svg" alt="ico"></div>
-            <p class="program-item__text">Smoky hookahs and all-in bar entertainment </p>
-          </div>
+        <h2 class="event-description__title title-main">Digital Meetup - это:</h2>
+        <div class="event-description__info">
+          <p class="event-description__text">«Digital marketing» —  это возможность погрузиться в мир CPA рынка и узнать тонкости работы с данной нишей. Мы расскажем чем живет CPA индустрия и поделимся знаниями как зарабатывать больше в аффилейт маркетинге. </p>
+          <p class="event-description__text">Формат мероприятия: официальная часть с докладами на тему аффилейт маркетинга и нетворинг вечер для всех желающих вступить в ряды CPA индустрии.</p>
         </div>
       </div>
     </section>
     <div class="speakers">
       <div class="wrapper">
+        <h2 class="speakers__title title-main">Доклады:</h2>
         <div class="speakers__wrapper">
           <div class="speaker">
-            <div class="speaker__photo-wrap"><img src="img/speaker_1.png" alt="speaker"></div>
-            <p class="speaker__name title-color">Alexander Klim</p>
-            <p class="speaker__post">Owner of Masons traffic team</p>
-            <p class="speaker__title">UAC is the actual alternative to FB traffic in Gambling niche</p>
+            <div class="speaker__photo-wrap"><img src="/img/speaker_1.png" alt="Владимир Соломиенко"></div>
+            <p class="speaker__name title-color">Владимир Соломиенко</p>
+            <p class="speaker__post">Digital-маркетолог. Основатель агенства performance-маркетинга VSMM agency</p>
+            <p class="speaker__title">10 самых распространенных ошибок в Digital-маркетинге в 2021 году</p>
           </div>
           <div class="speaker">
-            <div class="speaker__photo-wrap"><img src="img/speaker_2.png" alt="speaker"></div>
-            <p class="speaker__name title-color">Denis Kharlamov</p>
-            <p class="speaker__post">Owner of XLeads team</p>
-            <p class="speaker__title">Is it myth or reality the Nutra niche in FB?</p>
+            <div class="speaker__photo-wrap"><img src="/img/speaker_2.png" alt="Ольга Сапогова"></div>
+            <p class="speaker__name title-color">Ольга Сапогова</p>
+            <p class="speaker__post">Head of Affhub </p>
+            <p class="speaker__title">Secret Topic</p>
           </div>
           <div class="speaker">
-            <div class="speaker__photo-wrap"><img src="img/speaker_3.png" alt="speaker"></div>
-            <p class="speaker__name title-color">Alexander Boiko</p>
-            <p class="speaker__post">СЕО SalesDoubler</p>
-            <p class="speaker__title">Profitable case of traffic monetization through GDN outfits in Google Ads and their API processing</p>
+            <div class="speaker__photo-wrap"><img src="/img/speaker_3.png" alt="Валерия Швестко"></div>
+            <p class="speaker__name title-color">Валерия Швестко</p>
+            <p class="speaker__post">Head of Affiliate SalesDoubler</p>
+            <p class="speaker__title">Сколько можно заработать в FinTech и FMCG -вертикалях?</p>
           </div>
-          <div class="speaker speaker--secret">
-            <div class="speaker__photo-wrap"><img src="img/speaker.png" alt="speaker"></div>
-            <p class="speaker__name title-color">Secret Speaker</p>
-          </div>
-        </div><a class="speakers__btn btn-main js-scroll" href="#check-in">Check-in</a>
+        </div>
       </div>
     </div>
+    <section class="photo-report">
+      <div class="wrapper">
+        <h2 class="photo-report__title title-main">Как прошло предыдущее мероприятие от Affhub?</h2>
+        <div class="photo-report__list">
+          <div class="youtube-item">
+            <div class="youtube" data-id="Ptrpi3YH-0A"></div>
+            <p class="youtube-item__title">Промо ролик Affhub Meetup Tbilisi</p>
+          </div>
+          <div class="youtube-item">
+            <div class="youtube" data-id="5M7kl4H6f-k"></div>
+            <p class="youtube-item__title">Meduza Party в Одессе</p>
+          </div>
+          <div class="youtube-item">
+            <div class="youtube" data-id="qbYMZPL37-o"></div>
+            <p class="youtube-item__title">Gaming Party в Киеве</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="schedule">
       <div class="wrapper">
-        <div class="schedule__wrapper">
-          <div class="schedule__left">
-            <h2 class="schedule__title">Dive into world of traffic together with Affhub Meetup</h2><a class="schedule__btn schedule__btn--desc btn-main js-scroll" href="#check-in">Check-in</a>
-          </div>
-          <div class="schedule__right">
-            <h2 class="schedule__subtitle title-color">Timing</h2>
-            <div class="schedule__list">
-              <ul class="list-schedule">
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">13:00 - 14:00</p>
-                  <p class="list-schedule__text">Registration. Welcome drink</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">14:00 - 14:40</p>
-                  <p class="list-schedule__text">Report from Alexander Boiko</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">14:50 - 15:30</p>
-                  <p class="list-schedule__text">Report from Alexander Klim</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">15:30 - 16:00</p>
-                  <p class="list-schedule__text">Coffee Break</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">16:00 - 16:40</p>
-                  <p class="list-schedule__text">Report from Denis Kharlamov</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">16:50 - 17:30</p>
-                  <p class="list-schedule__text">Report from Secret Speaker</p>
-                </li>
-                <li class="list-schedule__item">
-                  <p class="list-schedule__time">18:00 - 22:00</p>
-                  <p class="list-schedule__text">Networking Party</p>
-                </li>
-              </ul>
-            </div>
-          </div><a class="schedule__btn schedule__btn--mob btn-main js-scroll" href="#check-in">Check-in</a>
+        <div class="schedule__top">
+          <h2 class="schedule__title title-main">Программа и тайминг:</h2>
+          <button class="btn-main schedule__btn schedule__btn--desc">Регистрируйся сейчас</button>
         </div>
+        <div class="schedule__list">
+          <div class="schedule-item">
+            <p class="schedule-item__ttl">Welcome Drink</p>
+            <p class="schedule-item__time">19:00 - 19:30</p>
+          </div>
+          <div class="schedule-item">
+            <p class="schedule-item__ttl">Доклад Владимира Соломиенко</p>
+            <p class="schedule-item__time">19:30 - 20:00</p>
+          </div>
+          <div class="schedule-item">
+            <p class="schedule-item__ttl">Доклад Ольги&nbsp;Сапоговой</p>
+            <p class="schedule-item__time">20:00 - 20:30</p>
+          </div>
+          <div class="schedule-item">
+            <p class="schedule-item__ttl">Доклад Валерии&nbsp;Швестко</p>
+            <p class="schedule-item__time">20:30 - 21:00</p>
+          </div>
+          <div class="schedule-item">
+            <p class="schedule-item__ttl">Networking Time</p>
+            <p class="schedule-item__time">21:00 - 22:30</p>
+          </div>
+        </div>
+        <button class="btn-main schedule__btn schedule__btn--mob">Регистрируйся сейчас</button>
       </div>
     </section>
     <section class="team">
       <div class="wrapper">
         <h2 class="team__title title-color">Be in touch with our team for cooperation</h2>
         <div class="team__list">
-          <div class="crewman"><img class="crewman__photo" src="img/olga.png" alt="Сапогова Ольга">
+          <div class="crewman"><img class="crewman__photo" src="/img/olga.png" alt="Сапогова Ольга">
             <div class="crewman__info">
               <p class="crewman__name">Sapogova Olga</p>
               <p class="crewman__post">Head of Affhub</p><a class="crewman__link" href="https://t.me/Olya_cpa">@Olya_cpa</a>
             </div>
           </div>
-          <div class="crewman"><img class="crewman__photo" src="img/viktoria.png" alt="Маслова Виктория">
+          <div class="crewman"><img class="crewman__photo" src="/img/viktoria.png" alt="Маслова Виктория">
             <div class="crewman__info">
               <p class="crewman__name">Maslova Viktorija</p>
               <p class="crewman__post">Event of Affhub</p><a class="crewman__link" href="https://t.me/Viktoriia_cpa">@Viktoriia_cpa</a>
             </div>
           </div>
-          <div class="crewman"><img class="crewman__photo" src="img/evgeniy.png" alt="Буряк Евгений">
+          <div class="crewman"><img class="crewman__photo" src="/img/evgeniy.png" alt="Буряк Евгений">
             <div class="crewman__info">
               <p class="crewman__name">Burjak Evgeny</p>
               <p class="crewman__post">Affiliate of Affhub</p><a class="crewman__link" href="https://t.me/Yevhenii_cpa">@Yevhenii_cpa</a>
@@ -446,113 +241,21 @@
         </div>
       </div>
     </section>
-    <section class="photo-report">
-      <div class="wrapper">
-        <div class="photo-report__wrap">
-          <h2 class="photo-report__title title-color">Here is a spot/place for your mood and emotions!</h2>
-          <p class="photo-report__info"><i class="fico fico-info"></i><span>Photo report will be here after the event. Keep for updates.</span></p>
-          <button class="photo-report__btn btn-main">Pictures from events.</button>
-        </div>
-        <div class="photo-report__list">
-          <div class="photo-report__col photo-report__col--1">
-            <div class="report-item"><img class="report-item__photo" src="img/report-kharkiv.jpg" alt="report-kharkiv">
-              <p class="report-item__title">Kharkov</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2762773490441164" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-            <div class="report-item"><img class="report-item__photo" src="img/report-dnieper.jpg" alt="report-dnieper">
-              <p class="report-item__title">Dnipro</p><a class="report-item__link" href="https://www.facebook.com/affhubcom/photos/?tab=album&amp;ref=page_internal" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-            <div class="report-item"><img class="report-item__photo" src="img/report-odessa.jpg" alt="report-odessa">
-              <p class="report-item__title">Odessa</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2531208116931037" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-          </div>
-          <div class="photo-report__col photo-report__col--2">
-            <div class="report-item"><img class="report-item__photo" src="img/report-kiev.jpg" alt="report-kiev">
-              <p class="report-item__title">Kyiv</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.4144152852303214" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-            <div class="report-item"><img class="report-item__photo" src="img/report-lviv.jpg" alt="report-lviv">
-              <p class="report-item__title">Lviv</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2753136881404825" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-          </div>
-          <div class="photo-report__col photo-report__col--3">
-            <div class="report-item"><img class="report-item__photo" src="img/report-st-petersburg.jpg" alt="report-st-petersburg">
-              <p class="report-item__title">St. Petersburg</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2993628530688991" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-            <div class="report-item"><img class="report-item__photo" src="img/report-novgorod.jpg" alt="report-novgorod">
-              <p class="report-item__title">Novgorod</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2546081345443714" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-            <div class="report-item"><img class="report-item__photo" src="img/report-rostov-on-don.jpg" alt="report-rostov-on-don">
-              <p class="report-item__title">Rostov-on-Don</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2710677745650739" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="sponsors">
       <div class="wrapper">
-        <div class="sponsors__row">
-          <h2 class="sponsors__title title-color">GENERAL SPONSOR</h2>
-          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://www.mgid.com/?utm_source=affhub_meetup_5.03.20" target="_black"><img src="img/svg/sponsor_1.svg" alt="mgid"></a></div>
-          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://everad.com/" target="_black">
-              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_2.svg" alt="everad"></div>
-              <p>Welcome sponsor</p></a><a class="sponsors__wrap-item" href="http://pmaffiliates.com/?utm_source=cpaboost&amp;utm_medium=youtube&amp;utm_campaign=promo" target="_black">
-              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_3.svg" alt="PMAffiliate"></div>
-              <p>Meetup sponsor</p></a><a class="sponsors__wrap-item" href="https://salesdoubler.ua/?utm_source=sitename&amp;utm_medium=logo&amp;utm_campaign=pagelogo" target="_black">
-              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_4.svg" alt="Sales Doubler"></div>
-              <p>Alcohol sponsor</p></a><a class="sponsors__wrap-item" href="https://roi-collective.com" target="_black">
-              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_5.svg" alt="Hookah"></div>
-              <p>Hookah sponsor</p></a></div>
-        </div>
-        <div class="sponsors__row">
-          <h2 class="sponsors__title title-color">Partners</h2>
-          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://mama-edu.com/dashboard" target="_black"><img src="img/svg/partners_1.svg" alt="mama"></a><a class="sponsors__wrap-item" href="https://my.gambling.pro/?utm_source=affhubmeetup" target="_black"><img src="img/svg/partners_2.svg" alt="gambling"></a>
-            <div class="sponsors__wrap-item"><img src="img/svg/partners_3.svg" alt="yosa"></div><a class="sponsors__wrap-item" href="https://sempro.com.ua" target="_black"><img src="img/svg/partners_4.svg" alt="sempro"></a>
+        <div class="sponsors__top">
+          <div class="sponsors__col">
+            <h2 class="sponsors__title title-color">GENERAL<br>SPONSOR</h2><a class="sponsors__wrap-photo" href="https://salesdoubler.ua/?utm_source=sitename&amp;utm_medium=logo&amp;utm_campaign=pagelogo" target="_black"><img src="/img/svg/sponsor_4.svg" alt="Sales Doubler"></a>
+          </div>
+          <div class="sponsors__col">
+            <h2 class="sponsors__title title-color">EXCLUSIVE<br>SPONSOR</h2><a class="sponsors__wrap-photo" href="https://everad.com/" target="_black"><img src="/img/svg/sponsor_2.svg" alt="everad"></a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="check-in" id="check-in">
-      <div class="wrapper">
-        <div class="check-in__wrapper">
-          <div class="check-in__success">
-            <h2 class="check-in__subtitle">Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!</h2>
-          </div>
-          <div class="check-in__left hide">
-            <h2 class="check-in__title">Check in</h2>
-            <p class="check-in__text">Leave your contacts, and we will keep you informed about upcoming events, and also, we will encourage you with pleasant bonuses as a member of our community.</p>
-          </div>
-          <div class="check-in__right hide">
-            <form class="form" id="registration_form" action="/" method="post">
-              <input class="js-input-location" type="hidden" name="location">
-              <div class="form__input-wrap">
-                <input class="form__input js-input" type="text" name="name" required>
-                <label class="form__label js-label">Name</label>
-                <div class="form_error"></div>
-              </div>
-              <div class="form__input-wrap">
-                <input class="form__input js-input" type="email" name="email" required>
-                <label class="form__label js-label">Email</label>
-                <div class="form_error"></div>
-              </div>
-              <div class="form__input-wrap">
-                <input class="form__input js-input" type="tel" name="phone" required>
-                <label class="form__label js-label">Phone number</label>
-                <div class="form_error"></div>
-              </div>
-              <div class="form__input-wrap">
-                <select class="form__select js-select" name="messenger">
-                  <option value="whatsapp">WhatsApp</option>
-                  <option value="viber">Viber</option>
-                  <option value="skype" selected="">Skype</option>
-                  <option value="telegram">Telegram</option>
-                </select>
-              </div>
-              <div class="form__input-wrap">
-                <input class="form__input js-input" id="nickname" type="text" name="nickname" required>
-                <label class="form__label js-label">Nickname</label>
-                <div class="form_error"></div>
-              </div>
-              <button class="form__btn btn-main js-reg-event" id="reg_btn" type="submit">Send a request</button>
-            </form>
+        <div class="sponsors__row">
+          <h2 class="sponsors__title-bottom">Информационные партеры:</h2>
+          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://mama-edu.com/dashboard" target="_black"><img src="/img/svg/partners_1.svg" alt="mama"></a><a class="sponsors__wrap-item" href="https://sempro.com.ua" target="_black"><img src="/img/svg/partners_4.svg" alt="sempro"></a>
+            <div class="sponsors__wrap-item"><img src="/img/svg/partners_3.svg" alt="yosa"></div>
+            <div class="sponsors__wrap-item"><img src="/img/svg/partners_2.svg" alt="zorbasmedia"></div>
           </div>
         </div>
       </div>
@@ -560,11 +263,11 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__left">
-          <div class="footer__left-text">All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.</div>
-          <div class="footer__left-everad"><span>With partnership and support</span><a href="https://everad.com/"><img src="img/svg/sponsor_2.svg" width="109" alt=""></a></div>
+          <div class="footer__left-text">Все материалы на сайте https://Affhub.net предназначены только для ознакомления. Мы делают все возможное, чтобы вся публикуемая информация была как можно более точной и полной.<br><br>Администрация сайта Affhub.net не несет никакой ответственности за любые потери, в том числе и финансовые, при неправильном толковании поданных материалов или по причине использования неполной или неправильной информации, размещенной на этом сайте.</div>
+          <div class="footer__left-everad"><span>При партнертсве и поддержке</span><a href="https://everad.com/"><img src="/img/svg/sponsor_2.svg" width="109" alt=""></a></div>
         </div>
         <div class="footer__right">
-          <div class="footer__right-top"><a class="footer__right-link" href="https://affhub.net/aboutus">About us</a><a class="footer__right-link" href="https://affhub.net/confidentiality">Confidentiality</a><a class="footer__right-link" href="https://affhub.net/termsofuse">Terms of use</a></div>
+          <div class="footer__right-top"><a class="footer__right-link" href="https://affhub.net/aboutus">О нас</a><a class="footer__right-link" href="https://affhub.net/confidentiality">Конфиденциальность</a><a class="footer__right-link" href="https://affhub.net/termsofuse">Пользовательское соглашение</a></div>
           <div class="footer__right-center">
             <div class="footer__right-contacts"><a href="mailto:info@affhub.net">
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -596,61 +299,12 @@
                 </svg></a></div>
           </div>
           <div class="footer__right-bottom">
-            <div class="footer__copy"><img src="https://affhub.net/app/themes/affhub/assets/img/svg/logo.svg" alt="">© Affhub 2019 - 2021. 
-All rights reserved.
-            </div>
-            <div class="footer__lang js-show-popup" data-target="#order-popup">
-              <div class="lang"><i class="fico fico-lang"></i>
-                <p class="lang__text">Change the website language</p>
-              </div>
-            </div>
+            <div class="footer__copy"><img src="https://affhub.net/app/themes/affhub/assets/img/svg/logo.svg" alt="">© Affhub 2019 - 2021. Все права защищены.</div>
           </div>
         </div>
       </div>
     </footer>
-        <div class="popup js-popup-init active">
-          <div class="popup__wrap">
-            <div class="popup__close js-close"><img src="img/svg/close.svg" alt="close"></div>
-            <div class="popup__content">
-              <div class="popup__left">
-                <h4 class="popup__title">Select the language to be displayed on the site</h4>
-              </div>
-              <div class="popup__right">
-                <div class="dropdown popup__dropdown">
-                  <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/index.html" data-lang="/index.html"><img src="img/svg/russia.svg" alt="russia">Russian</a></li>
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/english/" data-lang="/english/"><img src="img/svg/english.svg" alt="english">English</a></li>
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/georgian/" data-lang="/georgian/"><img src="img/svg/georgia.svg" alt="georgia">Georgian</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="popup js-popup" id="order-popup">
-          <div class="popup__wrap">
-            <div class="popup__close js-close"><img src="img/svg/close.svg" alt="close"></div>
-            <div class="popup__content">
-              <div class="popup__left">
-                <h4 class="popup__title">Select the language to be displayed on the site</h4>
-              </div>
-              <div class="popup__right">
-                <div class="dropdown popup__dropdown">
-                  <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/index.html" data-lang="/index.html"><img src="img/svg/russia.svg" alt="russia">Russian</a></li>
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/english/" data-lang="/english/"><img src="img/svg/english.svg" alt="english">English</a></li>
-                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/georgian/" data-lang="/georgian/"><img src="img/svg/georgia.svg" alt="georgia">Georgian</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    <div class="overlay js-overlay active"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"> </script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
