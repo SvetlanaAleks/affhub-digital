@@ -148,7 +148,13 @@
   margin-top: -21px;
   flex-shrink: 0;
 }
-
+.header-menu .navigation > li:last-child a {
+  display: flex;
+  align-items: center;
+}
+.header-menu .navigation > li:last-child img {
+  margin-right: 10px;
+}
 .navigation-mobile .links > li:last-child {
   padding: 15px 25px;
   max-width: 200px;
@@ -429,6 +435,9 @@ ul {
 @media screen and (max-width: 1023px) {
   .header-menu a {
     color: #fff;
+  }
+  .header-menu li:last-child a {
+    color: #161032;
   }
   .navigation-container
     > .menu-item-has-children
