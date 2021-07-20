@@ -1,0 +1,36 @@
+- var CHECK_IN = LANG.check_in;
+
+section.check-in#check-in
+	.wrapper
+		.check-in__wrapper
+			.check-in__success
+					h2.check-in__subtitle!= CHECK_IN.success
+			.check-in__left.hide
+				h2.check-in__title!= CHECK_IN.title
+				p.check-in__text!= CHECK_IN.desc
+			.check-in__right.hide
+				form.form#registration_form(action="/", method="post")
+					input.js-input-location(type="hidden" name="location")
+					.form__input-wrap
+						input.form__input.js-input(type="text", name="name" required)
+						label.form__label.js-label!= CHECK_IN.label_1
+						.form_error
+					.form__input-wrap
+						input.form__input.js-input(type="email", name="email" required)
+						label.form__label.js-label Email
+						.form_error
+					.form__input-wrap
+						input.form__input.js-input(type="tel", name="phone" required)
+						label.form__label.js-label!= CHECK_IN.label_2
+						.form_error
+					.form__input-wrap
+						select.form__select.js-select(name="messenger")
+							option(value='whatsapp') WhatsApp
+							option(value='viber') Viber
+							option(value='skype' selected='') Skype
+							option(value='telegram') Telegram
+					.form__input-wrap
+						input.form__input.js-input#nickname(type="text", name="nickname" required)
+						label.form__label.js-label!= CHECK_IN.nickname
+						.form_error
+					button.form__btn.btn-main.js-reg-event#reg_btn(type="submit")!= CHECK_IN.btn

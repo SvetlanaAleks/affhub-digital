@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://affhub.net/app/themes/affhub/assets/img/favicon.ico">
+    <title>Affhub-meetup-Tbilisi</title>
+    <script>var EVERlocale = "english";</script>
+    <style>
+      #preloader {
+      	background: #161032;
+      	position: fixed;
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      	left: 0;
+      	bottom: 0;
+      	right: 0;
+      	top: 0;
+      	z-index: 100;
+      	transition: 1s all;
+      	opacity: 1;
+      	visibility: visible
+      }
+      
+      #preloader.cansel {
+      	opacity: 0;
+      	visibility: hidden
+      }
+      
+      .preloader {
+      	display: flex;
+      	align-items: center;
+      	justify-content: center
+      }
+      
+      .preloader__item--1 {
+      	width: 20px;
+      	height: 20px;
+      	background: #f583a1;
+      	border-radius: 50%;
+      	background-color: #ffa800;
+      	margin: 7px;
+      	display: flex;
+      	justify-content: center;
+      	align-items: center
+      }
+      
+      @keyframes scale {
+      	0% {
+      		transform: scale(1)
+      	}
+      
+      	50%,
+      	75% {
+      		transform: scale(2.5)
+      	}
+      
+      	78%,
+      	100% {
+      		opacity: 0
+      	}
+      }
+      
+      .preloader__item--1:before {
+      	content: '';
+      	width: 20px;
+      	height: 20px;
+      	border-radius: 50%;
+      	background-color: #ffa800;
+      	opacity: .7;
+      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+      	animation-delay: 200ms;
+      	transition: .5s all ease;
+      	transform: scale(1)
+      }
+      
+      .preloader__item--2 {
+      	width: 20px;
+      	height: 20px;
+      	background: #f583a1;
+      	border-radius: 50%;
+      	background-color: #ff57c6;
+      	margin: 7px;
+      	display: flex;
+      	justify-content: center;
+      	align-items: center
+      }
+      
+      @keyframes scale {
+      	0% {
+      		transform: scale(1)
+      	}
+      
+      	50%,
+      	75% {
+      		transform: scale(2.5)
+      	}
+      
+      	78%,
+      	100% {
+      		opacity: 0
+      	}
+      }
+      
+      .preloader__item--2:before {
+      	content: '';
+      	width: 20px;
+      	height: 20px;
+      	border-radius: 50%;
+      	background-color: #ff57c6;
+      	opacity: .7;
+      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+      	animation-delay: 400ms;
+      	transition: .5s all ease;
+      	transform: scale(1)
+      }
+      
+      .preloader__item--3 {
+      	width: 20px;
+      	height: 20px;
+      	background: #f583a1;
+      	border-radius: 50%;
+      	background-color: #ac65c8;
+      	margin: 7px;
+      	display: flex;
+      	justify-content: center;
+      	align-items: center
+      }
+      
+      @keyframes scale {
+      	0% {
+      		transform: scale(1)
+      	}
+      
+      	50%,
+      	75% {
+      		transform: scale(2.5)
+      	}
+      
+      	78%,
+      	100% {
+      		opacity: 0
+      	}
+      }
+      
+      .preloader__item--3:before {
+      	content: '';
+      	width: 20px;
+      	height: 20px;
+      	border-radius: 50%;
+      	background-color: #ac65c8;
+      	opacity: .7;
+      	animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+      	animation-delay: 600ms;
+      	transition: .5s all ease;
+      	transform: scale(1)
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-180331414-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-180331414-1');
+    </script>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-menu">
+        <div class="wrapper"><a class="logo" href="https://affhub.net"><img src="img/svg/logo.svg" alt="Affhub"></a>
+          <div class="mobile-button"></div>
+          <div class="mobile-hide">
+            <ul class="navigation navigation-container">
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2321" id="menu-item-2321"><a href="https://affhub.net/news/">News</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2264" id="menu-item-2264"><a href="https://affhub.net/news/interview/">Interview</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2265" id="menu-item-2265"><a href="https://affhub.net/news/konkursy/">Contests</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2263" id="menu-item-2263"><a href="https://affhub.net/news/obzor-events-cpa-konferentsii/">CPA events</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2320" id="menu-item-2320"><a href="https://affhub.net/arbitrazh-trafika/">Traffic arbitrage</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2266" id="menu-item-2266"><a href="https://affhub.net/arbitrazh-trafika/arbitrazh-trafika-dlya-novichkov/">For beginners</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2267" id="menu-item-2267"><a href="https://affhub.net/arbitrazh-trafika/istochnikitrafika/">Sources of traffic</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2317" id="menu-item-2317"><a href="https://affhub.net/arbitrazh-trafika/servisy-dlya-arbitrazhnika/">Services</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2318" id="menu-item-2318"><a href="https://affhub.net/arbitrazh-trafika/vertikali-nishi-v-arbitrazhe-trafika/">Verticals and niches</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2268" id="menu-item-2268"><a href="https://affhub.net/arbitrazh-trafika/cases/">Cases</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2269" id="menu-item-2269"><a href="https://affhub.net/arbitrazh-trafika/arbitrazh_trafika_sotsseti/">Social networks</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2270" id="menu-item-2270"><a href="https://affhub.net/aboutstudy/">Training</a></li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2322" id="menu-item-2322"><a href="https://affhub.net/events/">Events</a>
+                <ul class="sub-menu" style="height: auto;">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2296" id="menu-item-2296"><a>Affhub events</a>
+                    <ul class="sub-menu" style="height: auto;">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2299" id="menu-item-2299"><a href="https://affhub.net/cpaboost/">CPA Boost 3.0</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2300" id="menu-item-2300"><a href="https://affhub.net/gamingparty/">Affhub Gaming Party</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2298" id="menu-item-2298"><a href="https://affhub.net/gambitparty/">Queen’s Gambit Party</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2297" id="menu-item-2297"><a href="https://affhub.net/kalendarcpa/">Events calendar</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261" id="menu-item-2261"><a href="https://affhub.net/vakansii/">Vakansii</a></li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2262" id="menu-item-2262"><a href="https://contest.everad.com/">Lay on three cars</a></li>
+            </ul>
+          </div>
+          <div class="navigation-mobile">
+            <div class="logo pull-left"><img src="img/svg/logo.svg" alt="Affhub"></div>
+            <div class="navigation-close pull-right"></div>
+            <div class="clearfix"></div>
+            <ul class="links navigation-container">
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2321"><a href="https://affhub.net/news/">News</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2264"><a href="https://affhub.net/news/interview/">Interview</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2265"><a href="https://affhub.net/news/konkursy/">Contests</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2263"><a href="https://affhub.net/news/obzor-events-cpa-konferentsii/">CPA events</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2320"><a href="https://affhub.net/arbitrazh-trafika/">Traffic arbitrage</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2266"><a href="https://affhub.net/arbitrazh-trafika/arbitrazh-trafika-dlya-novichkov/">For beginners</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2267"><a href="https://affhub.net/arbitrazh-trafika/istochnikitrafika/">Sources of traffic</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2317"><a href="https://affhub.net/arbitrazh-trafika/servisy-dlya-arbitrazhnika/">Services</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2318"><a href="https://affhub.net/arbitrazh-trafika/vertikali-nishi-v-arbitrazhe-trafika/">Verticals and niches</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2268"><a href="https://affhub.net/arbitrazh-trafika/cases/">Cases</a></li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2269"><a href="https://affhub.net/arbitrazh-trafika/arbitrazh_trafika_sotsseti/">Social networks</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2270"><a href="https://affhub.net/aboutstudy/">Training</a></li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2322"><a href="https://affhub.net/events/">Events</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2296"><a>Affhub events</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2299" id="menu-item-2299"><a href="https://affhub.net/cpaboost/">CPA Boost 3.0</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2300" id="menu-item-2300"><a href="https://affhub.net/gamingparty/">Affhub Gaming Party</a></li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2298" id="menu-item-2298"><a href="https://affhub.net/gambitparty/">Queen’s Gambit Party</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2297"><a href="https://affhub.net/kalendarcpa/">Events calendar</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2261"><a href="https://affhub.net/vakansii/">Vakansii</a></li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2262"><a href="https://contest.everad.com/">Lay on three cars</a></li>
+            </ul>
+            <div class="text"><span></span><a href="https://everad.com/"><img loading="lazy" src="https://affhub.net/app/themes/affhub/assets/img/svg/everad.svg" width="109" alt=""></a></div>
+            <div class="social"><a href="https://www.facebook.com/affhubcom/">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="21px">
+                  <path class="facebook" fill-rule="evenodd" fill="#ffffff" d="M6.666,4.624 L6.666,6.723 L10.000,6.723 L9.583,10.501 L6.666,10.501 L6.666,20.998 L2.083,20.998 L2.083,10.501 L0.000,10.501 L0.000,6.723 L2.083,6.723 L2.083,4.624 C2.083,4.624 1.712,0.618 5.417,-0.001 L10.000,-0.001 L10.000,3.364 L7.916,3.364 C7.916,3.364 6.730,3.318 6.666,4.624 Z"></path>
+                </svg></a><a href="https://vk.com/affhub">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px" height="16px">
+                  <path class="vk" fill-rule="evenodd" fill="#ffffff" d="M24.809,10.121 C25.757,11.032 26.759,11.889 27.610,12.892 C27.986,13.337 28.342,13.797 28.614,14.314 C29.000,15.050 28.650,15.859 27.980,15.903 L23.813,15.901 C22.738,15.988 21.880,15.563 21.159,14.841 C20.582,14.263 20.048,13.647 19.493,13.050 C19.266,12.807 19.028,12.577 18.743,12.395 C18.174,12.031 17.681,12.142 17.356,12.727 C17.024,13.319 16.949,13.977 16.917,14.638 C16.872,15.604 16.576,15.857 15.590,15.901 C13.483,15.998 11.484,15.685 9.627,14.640 C7.989,13.720 6.719,12.418 5.614,10.946 C3.462,8.078 1.814,4.928 0.333,1.689 C-0.000,0.961 0.244,0.568 1.062,0.554 C2.422,0.529 3.781,0.531 5.143,0.552 C5.695,0.560 6.061,0.872 6.274,1.385 C7.010,3.164 7.910,4.855 9.040,6.424 C9.340,6.843 9.647,7.260 10.084,7.553 C10.567,7.879 10.935,7.772 11.163,7.242 C11.307,6.907 11.370,6.544 11.403,6.185 C11.510,4.948 11.525,3.714 11.336,2.481 C11.219,1.712 10.779,1.213 9.998,1.069 C9.600,0.993 9.659,0.847 9.852,0.624 C10.187,0.238 10.502,-0.001 11.130,-0.001 L15.840,-0.001 C16.582,0.142 16.746,0.470 16.848,1.204 L16.852,6.348 C16.844,6.632 16.996,7.476 17.516,7.664 C17.933,7.797 18.207,7.470 18.457,7.211 C19.585,6.034 20.389,4.642 21.108,3.202 C21.428,2.569 21.702,1.911 21.968,1.254 C22.165,0.766 22.474,0.526 23.033,0.537 L27.565,0.541 C27.700,0.541 27.836,0.542 27.966,0.565 C28.730,0.693 28.939,1.015 28.703,1.749 C28.331,2.900 27.608,3.858 26.901,4.822 C26.145,5.852 25.337,6.844 24.587,7.879 C23.898,8.824 23.953,9.300 24.809,10.121 L24.809,10.121 Z"></path>
+                </svg></a><a href="https://t.me/joinchat/AAAAAEJWe7Cf1Cw_rO7JZw">
+                <svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                  <path class="telegram" id="telegram-1" fill="#ffffff" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"></path>
+                </svg></a><a href="https://www.instagram.com/affhubcommunity/">
+                <svg class="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
+                  <radialgradient id="foot-rg1" r="150%" cx="30%" cy="107%">
+                    <stop stop-color="#fdf497" offset="0"></stop>
+                    <stop stop-color="#fdf497" offset="0.05"></stop>
+                    <stop stop-color="#fd5949" offset="0.45"></stop>
+                    <stop stop-color="#d6249f" offset="0.6"></stop>
+                    <stop stop-color="#285AEB" offset="0.9"></stop>
+                  </radialgradient>
+                  <path fill-rule="evenodd" fill="#ffffff" d="M15.281,21.499 L7.219,21.499 C3.508,21.499 0.500,18.491 0.500,14.781 L0.500,6.717 C0.500,3.007 3.508,-0.001 7.219,-0.001 L15.281,-0.001 C18.991,-0.001 22.000,3.007 22.000,6.717 L22.000,14.781 C22.000,18.491 18.991,21.499 15.281,21.499 ZM19.984,6.717 C19.984,4.125 17.874,2.014 15.281,2.014 L7.219,2.014 C4.625,2.014 2.515,4.125 2.515,6.717 L2.515,14.781 C2.515,17.373 4.625,19.484 7.219,19.484 L15.281,19.484 C17.874,19.484 19.984,17.373 19.984,14.781 L19.984,6.717 ZM17.028,5.687 C16.632,5.687 16.312,5.367 16.312,4.972 C16.312,4.576 16.632,4.255 17.028,4.255 C17.424,4.255 17.744,4.576 17.744,4.972 C17.744,5.367 17.424,5.687 17.028,5.687 ZM11.250,16.124 C8.282,16.124 5.875,13.717 5.875,10.750 C5.875,7.782 8.282,5.375 11.250,5.375 C14.218,5.375 16.625,7.782 16.625,10.750 C16.625,13.717 14.218,16.124 11.250,16.124 ZM11.250,7.391 C9.398,7.391 7.891,8.897 7.891,10.750 C7.891,12.601 9.398,14.109 11.250,14.109 C13.102,14.109 14.609,12.601 14.609,10.750 C14.609,8.897 13.102,7.391 11.250,7.391 Z"></path>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__left">
+            <div class="header__info-top">
+              <h1 class="header__title title-color">First in Georgia!</h1>
+              <p class="header__desc">The top affiliate event</p>
+              <p class="header__info">Meetup + Afterparty</p><a class="header__btn header__btn--desc btn-main js-scroll" href="#check-in">Check-in</a>
+            </div>
+            <div class="header__info-bottom details">
+              <div class="details__top"><img class="details__date" src="img/date.svg" alt="04">
+                <div class="details__desc">
+                  <p class="details__month">June</p>
+                  <p class="details__time">At 1pm on Friday</p>
+                </div>
+              </div>
+              <div class="details__bottom"><img src="img/tbilisi.png" alt="tbilisi">
+                <div class="details__place">
+                  <p class="details__place-text">Tbilisi, Republic Multifunctional Event&nbsp;Space</p><a class="details__link" href="https://goo.gl/maps/aprQYc1EApKfbFcFA" target="_blank">On the map<i class="fico fico-arrow"></i></a>
+                </div>
+              </div>
+            </div><a class="header__btn header__btn--mob btn-main js-scroll" href="#check-in">Check-in</a>
+          </div>
+          <div class="header__right"><img src="img/header_title.svg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="event-description">
+      <div class="wrapper">
+        <h2 class="event-description__title title-color">The description of event:</h2>
+        <div class="event-description__wrapper">
+          <div class="event-description__row">
+            <h4 class="event-description__subtitle">Why do you think you need to be on Affhub?</h4>
+            <div class="event-description__info">
+              <p class="event-description__text">Affhub is the arbitration community which affiliates with affiliated marketing members throughout the world. Our objectives are maximizing the usefulness of the reports and networking on the hot afterparties. </p>
+              <p class="event-description__text">How would you like to get the actual tips and secrets of the top affiliated marketing? Would you like to make new acquaintance in this area? Are you looking for a team or profitable acquaintance?  Come to AFFHUB!</p>
+            </div>
+          </div>
+          <div class="event-description__row">
+            <h4 class="event-description__subtitle">Affhub Meetup Tbilisy</h4>
+            <div class="event-description__info">
+              <p class="event-description__text">Is a prominent event for webmasters and top-affiliates of Georgia. This includes  reports from tops, advanced networking and pleasant afterparty with smoky hookahs and all-in  bar entertainment.</p>
+            </div>
+          </div>
+        </div><a class="event-description__link" href="https://calendar.google.com/calendar/u/0/r" target="_blank">Add a reminder to your calendar<i class="fico fico-arrowS"></i></a>
+      </div>
+    </section>
+    <section class="entertaining-program">
+      <div class="wrapper">
+        <h2 class="entertaining-program__title title-color">Affhub Meetup Tbilisi is:</h2>
+        <div class="entertaining-program__list">
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_1.svg" alt="ico"></div>
+            <p class="program-item__text">Meetup + Afterparty</p>
+          </div>
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_2.svg" alt="ico"></div>
+            <p class="program-item__text">Four reports from affiliated marketing tops </p>
+          </div>
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_3.svg" alt="ico"></div>
+            <p class="program-item__text">Entertainment</p>
+          </div>
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_4.svg" alt="ico"></div>
+            <p class="program-item__text">TOP niches: Gambling, Nutra, Crypto and PDL</p>
+          </div>
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_5.svg" alt="ico"></div>
+            <p class="program-item__text">Advanced networking</p>
+          </div>
+          <div class="program-item">
+            <div class="program-item__wrap-ico"><img class="program-item__ico" src="img/svg/program_6.svg" alt="ico"></div>
+            <p class="program-item__text">Smoky hookahs and all-in bar entertainment </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="speakers">
+      <div class="wrapper">
+        <div class="speakers__wrapper">
+          <div class="speaker">
+            <div class="speaker__photo-wrap"><img src="img/speaker_1.png" alt="speaker"></div>
+            <p class="speaker__name title-color">Alexander Klim</p>
+            <p class="speaker__post">Owner of Masons traffic team</p>
+            <p class="speaker__title">UAC is the actual alternative to FB traffic in Gambling niche</p>
+          </div>
+          <div class="speaker">
+            <div class="speaker__photo-wrap"><img src="img/speaker_2.png" alt="speaker"></div>
+            <p class="speaker__name title-color">Denis Kharlamov</p>
+            <p class="speaker__post">Owner of XLeads team</p>
+            <p class="speaker__title">Is it myth or reality the Nutra niche in FB?</p>
+          </div>
+          <div class="speaker">
+            <div class="speaker__photo-wrap"><img src="img/speaker_3.png" alt="speaker"></div>
+            <p class="speaker__name title-color">Alexander Boiko</p>
+            <p class="speaker__post">СЕО SalesDoubler</p>
+            <p class="speaker__title">Profitable case of traffic monetization through GDN outfits in Google Ads and their API processing</p>
+          </div>
+          <div class="speaker speaker--secret">
+            <div class="speaker__photo-wrap"><img src="img/speaker.png" alt="speaker"></div>
+            <p class="speaker__name title-color">Secret Speaker</p>
+          </div>
+        </div><a class="speakers__btn btn-main js-scroll" href="#check-in">Check-in</a>
+      </div>
+    </div>
+    <section class="schedule">
+      <div class="wrapper">
+        <div class="schedule__wrapper">
+          <div class="schedule__left">
+            <h2 class="schedule__title">Dive into world of traffic together with Affhub Meetup</h2><a class="schedule__btn schedule__btn--desc btn-main js-scroll" href="#check-in">Check-in</a>
+          </div>
+          <div class="schedule__right">
+            <h2 class="schedule__subtitle title-color">Timing</h2>
+            <div class="schedule__list">
+              <ul class="list-schedule">
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">13:00 - 14:00</p>
+                  <p class="list-schedule__text">Registration. Welcome drink</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">14:00 - 14:40</p>
+                  <p class="list-schedule__text">Report from Alexander Boiko</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">14:50 - 15:30</p>
+                  <p class="list-schedule__text">Report from Alexander Klim</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">15:30 - 16:00</p>
+                  <p class="list-schedule__text">Coffee Break</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">16:00 - 16:40</p>
+                  <p class="list-schedule__text">Report from Denis Kharlamov</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">16:50 - 17:30</p>
+                  <p class="list-schedule__text">Report from Secret Speaker</p>
+                </li>
+                <li class="list-schedule__item">
+                  <p class="list-schedule__time">18:00 - 22:00</p>
+                  <p class="list-schedule__text">Networking Party</p>
+                </li>
+              </ul>
+            </div>
+          </div><a class="schedule__btn schedule__btn--mob btn-main js-scroll" href="#check-in">Check-in</a>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="wrapper">
+        <h2 class="team__title title-color">Be in touch with our team for cooperation</h2>
+        <div class="team__list">
+          <div class="crewman"><img class="crewman__photo" src="img/olga.png" alt="Сапогова Ольга">
+            <div class="crewman__info">
+              <p class="crewman__name">Sapogova Olga</p>
+              <p class="crewman__post">Head of Affhub</p><a class="crewman__link" href="https://t.me/Olya_cpa">@Olya_cpa</a>
+            </div>
+          </div>
+          <div class="crewman"><img class="crewman__photo" src="img/viktoria.png" alt="Маслова Виктория">
+            <div class="crewman__info">
+              <p class="crewman__name">Maslova Viktorija</p>
+              <p class="crewman__post">Event of Affhub</p><a class="crewman__link" href="https://t.me/Viktoriia_cpa">@Viktoriia_cpa</a>
+            </div>
+          </div>
+          <div class="crewman"><img class="crewman__photo" src="img/evgeniy.png" alt="Буряк Евгений">
+            <div class="crewman__info">
+              <p class="crewman__name">Burjak Evgeny</p>
+              <p class="crewman__post">Affiliate of Affhub</p><a class="crewman__link" href="https://t.me/Yevhenii_cpa">@Yevhenii_cpa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="photo-report">
+      <div class="wrapper">
+        <div class="photo-report__wrap">
+          <h2 class="photo-report__title title-color">Here is a spot/place for your mood and emotions!</h2>
+          <p class="photo-report__info"><i class="fico fico-info"></i><span>Photo report will be here after the event. Keep for updates.</span></p>
+          <button class="photo-report__btn btn-main">Pictures from events.</button>
+        </div>
+        <div class="photo-report__list">
+          <div class="photo-report__col photo-report__col--1">
+            <div class="report-item"><img class="report-item__photo" src="img/report-kharkiv.jpg" alt="report-kharkiv">
+              <p class="report-item__title">Kharkov</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2762773490441164" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+            <div class="report-item"><img class="report-item__photo" src="img/report-dnieper.jpg" alt="report-dnieper">
+              <p class="report-item__title">Dnipro</p><a class="report-item__link" href="https://www.facebook.com/affhubcom/photos/?tab=album&amp;ref=page_internal" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+            <div class="report-item"><img class="report-item__photo" src="img/report-odessa.jpg" alt="report-odessa">
+              <p class="report-item__title">Odessa</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2531208116931037" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+          </div>
+          <div class="photo-report__col photo-report__col--2">
+            <div class="report-item"><img class="report-item__photo" src="img/report-kiev.jpg" alt="report-kiev">
+              <p class="report-item__title">Kyiv</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.4144152852303214" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+            <div class="report-item"><img class="report-item__photo" src="img/report-lviv.jpg" alt="report-lviv">
+              <p class="report-item__title">Lviv</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2753136881404825" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+          </div>
+          <div class="photo-report__col photo-report__col--3">
+            <div class="report-item"><img class="report-item__photo" src="img/report-st-petersburg.jpg" alt="report-st-petersburg">
+              <p class="report-item__title">St. Petersburg</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2993628530688991" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+            <div class="report-item"><img class="report-item__photo" src="img/report-novgorod.jpg" alt="report-novgorod">
+              <p class="report-item__title">Novgorod</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2546081345443714" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+            <div class="report-item"><img class="report-item__photo" src="img/report-rostov-on-don.jpg" alt="report-rostov-on-don">
+              <p class="report-item__title">Rostov-on-Don</p><a class="report-item__link" href="https://www.facebook.com/media/set/?vanity=affhubcom&amp;set=a.2710677745650739" target="_blank">Go to album<i class="fico fico-arrow"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="wrapper">
+        <div class="sponsors__row">
+          <h2 class="sponsors__title title-color">GENERAL SPONSOR</h2>
+          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://www.mgid.com/?utm_source=affhub_meetup_5.03.20" target="_black"><img src="img/svg/sponsor_1.svg" alt="mgid"></a></div>
+          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://everad.com/" target="_black">
+              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_2.svg" alt="everad"></div>
+              <p>Welcome sponsor</p></a><a class="sponsors__wrap-item" href="http://pmaffiliates.com/?utm_source=cpaboost&amp;utm_medium=youtube&amp;utm_campaign=promo" target="_black">
+              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_3.svg" alt="PMAffiliate"></div>
+              <p>Meetup sponsor</p></a><a class="sponsors__wrap-item" href="https://salesdoubler.ua/?utm_source=sitename&amp;utm_medium=logo&amp;utm_campaign=pagelogo" target="_black">
+              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_4.svg" alt="Sales Doubler"></div>
+              <p>Alcohol sponsor</p></a><a class="sponsors__wrap-item" href="https://roi-collective.com" target="_black">
+              <div class="sponsors__wrap-photo"><img src="img/svg/sponsor_5.svg" alt="Hookah"></div>
+              <p>Hookah sponsor</p></a></div>
+        </div>
+        <div class="sponsors__row">
+          <h2 class="sponsors__title title-color">Partners</h2>
+          <div class="sponsors__list"><a class="sponsors__wrap-item" href="https://mama-edu.com/dashboard" target="_black"><img src="img/svg/partners_1.svg" alt="mama"></a><a class="sponsors__wrap-item" href="https://my.gambling.pro/?utm_source=affhubmeetup" target="_black"><img src="img/svg/partners_2.svg" alt="gambling"></a>
+            <div class="sponsors__wrap-item"><img src="img/svg/partners_3.svg" alt="yosa"></div><a class="sponsors__wrap-item" href="https://sempro.com.ua" target="_black"><img src="img/svg/partners_4.svg" alt="sempro"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="check-in" id="check-in">
+      <div class="wrapper">
+        <div class="check-in__wrapper">
+          <div class="check-in__success">
+            <h2 class="check-in__subtitle">Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!</h2>
+          </div>
+          <div class="check-in__left hide">
+            <h2 class="check-in__title">Check in</h2>
+            <p class="check-in__text">Leave your contacts, and we will keep you informed about upcoming events, and also, we will encourage you with pleasant bonuses as a member of our community.</p>
+          </div>
+          <div class="check-in__right hide">
+            <form class="form" id="registration_form" action="/" method="post">
+              <input class="js-input-location" type="hidden" name="location">
+              <div class="form__input-wrap">
+                <input class="form__input js-input" type="text" name="name" required>
+                <label class="form__label js-label">Name</label>
+                <div class="form_error"></div>
+              </div>
+              <div class="form__input-wrap">
+                <input class="form__input js-input" type="email" name="email" required>
+                <label class="form__label js-label">Email</label>
+                <div class="form_error"></div>
+              </div>
+              <div class="form__input-wrap">
+                <input class="form__input js-input" type="tel" name="phone" required>
+                <label class="form__label js-label">Phone number</label>
+                <div class="form_error"></div>
+              </div>
+              <div class="form__input-wrap">
+                <select class="form__select js-select" name="messenger">
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="viber">Viber</option>
+                  <option value="skype" selected="">Skype</option>
+                  <option value="telegram">Telegram</option>
+                </select>
+              </div>
+              <div class="form__input-wrap">
+                <input class="form__input js-input" id="nickname" type="text" name="nickname" required>
+                <label class="form__label js-label">Nickname</label>
+                <div class="form_error"></div>
+              </div>
+              <button class="form__btn btn-main js-reg-event" id="reg_btn" type="submit">Send a request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__left">
+          <div class="footer__left-text">All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.</div>
+          <div class="footer__left-everad"><span>With partnership and support</span><a href="https://everad.com/"><img src="img/svg/sponsor_2.svg" width="109" alt=""></a></div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-top"><a class="footer__right-link" href="https://affhub.net/aboutus">About us</a><a class="footer__right-link" href="https://affhub.net/confidentiality">Confidentiality</a><a class="footer__right-link" href="https://affhub.net/termsofuse">Terms of use</a></div>
+          <div class="footer__right-center">
+            <div class="footer__right-contacts"><a href="mailto:info@affhub.net">
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.812349 3.42748C0.484967 3.16557 0 3.39866 0 3.81791V13.697C0 14.2493 0.447716 14.697 1 14.697H17C17.5523 14.697 18 14.2493 18 13.697V3.81791C18 3.39866 17.515 3.16557 17.1877 3.42748L10.8741 8.47833C9.77843 9.35486 8.22157 9.35486 7.12592 8.47833L0.812349 3.42748Z" fill="#FF579E"></path>
+                  <path d="M16.2862 1.58741C16.6552 1.29216 16.4465 0.696976 15.9738 0.696976H2.02617C1.55353 0.696976 1.34476 1.29216 1.71382 1.58741L8.37531 6.91659C8.74052 7.20877 9.25948 7.20877 9.6247 6.91659L16.2862 1.58741Z" fill="#FF579E"></path>
+                </svg>info@affhub.net</a><a href="tel:+380933794144">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.35355 1.28276C3.5725 0.501714 2.30617 0.501714 1.52513 1.28276L1.17157 1.63632C-0.390524 3.19841 -0.390524 5.73107 1.17157 7.29317L11.0711 17.1927C12.6332 18.7548 15.1658 18.7548 16.7279 17.1927L17.0815 16.8391C17.8625 16.0581 17.8625 14.7917 17.0815 14.0107L15.7438 12.673C15.0104 11.9396 13.7741 12.1402 13.3102 13.0679C13.0783 13.5317 12.4602 13.632 12.0935 13.2653L5.09891 6.27076C4.73222 5.90407 4.83254 5.28591 5.29636 5.054C6.22401 4.59017 6.42464 3.35385 5.69127 2.62048L4.35355 1.28276Z" fill="#FF579E"></path>
+                </svg> +380 93 379 41 44</a></div>
+            <div class="social pull-right"><a href="https://www.facebook.com/affhubcom/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="21px">
+                  <path class="facebook" fill-rule="evenodd" fill="#211540" d="M6.666,4.624 L6.666,6.723 L10.000,6.723 L9.583,10.501 L6.666,10.501 L6.666,20.998 L2.083,20.998 L2.083,10.501 L0.000,10.501 L0.000,6.723 L2.083,6.723 L2.083,4.624 C2.083,4.624 1.712,0.618 5.417,-0.001 L10.000,-0.001 L10.000,3.364 L7.916,3.364 C7.916,3.364 6.730,3.318 6.666,4.624 Z"></path>
+                </svg></a><a href="https://vk.com/affhub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="16px">
+                  <path class="vk" fill-rule="evenodd" fill="#211540" d="M24.809,10.121 C25.757,11.032 26.759,11.889 27.610,12.892 C27.986,13.337 28.342,13.797 28.614,14.314 C29.000,15.050 28.650,15.859 27.980,15.903 L23.813,15.901 C22.738,15.988 21.880,15.563 21.159,14.841 C20.582,14.263 20.048,13.647 19.493,13.050 C19.266,12.807 19.028,12.577 18.743,12.395 C18.174,12.031 17.681,12.142 17.356,12.727 C17.024,13.319 16.949,13.977 16.917,14.638 C16.872,15.604 16.576,15.857 15.590,15.901 C13.483,15.998 11.484,15.685 9.627,14.640 C7.989,13.720 6.719,12.418 5.614,10.946 C3.462,8.078 1.814,4.928 0.333,1.689 C-0.000,0.961 0.244,0.568 1.062,0.554 C2.422,0.529 3.781,0.531 5.143,0.552 C5.695,0.560 6.061,0.872 6.274,1.385 C7.010,3.164 7.910,4.855 9.040,6.424 C9.340,6.843 9.647,7.260 10.084,7.553 C10.567,7.879 10.935,7.772 11.163,7.242 C11.307,6.907 11.370,6.544 11.403,6.185 C11.510,4.948 11.525,3.714 11.336,2.481 C11.219,1.712 10.779,1.213 9.998,1.069 C9.600,0.993 9.659,0.847 9.852,0.624 C10.187,0.238 10.502,-0.001 11.130,-0.001 L15.840,-0.001 C16.582,0.142 16.746,0.470 16.848,1.204 L16.852,6.348 C16.844,6.632 16.996,7.476 17.516,7.664 C17.933,7.797 18.207,7.470 18.457,7.211 C19.585,6.034 20.389,4.642 21.108,3.202 C21.428,2.569 21.702,1.911 21.968,1.254 C22.165,0.766 22.474,0.526 23.033,0.537 L27.565,0.541 C27.700,0.541 27.836,0.542 27.966,0.565 C28.730,0.693 28.939,1.015 28.703,1.749 C28.331,2.900 27.608,3.858 26.901,4.822 C26.145,5.852 25.337,6.844 24.587,7.879 C23.898,8.824 23.953,9.300 24.809,10.121 L24.809,10.121 Z"></path>
+                </svg></a><a href="https://t.me/joinchat/AAAAAEJWe7Cf1Cw_rO7JZw">
+                <svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                  <path class="telegram" id="telegram-1" fill="#211540" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"></path>
+                </svg></a><a href="https://www.instagram.com/affhubcommunity/">
+                <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px">
+                  <radialgradient id="foot-rg3" r="150%" cx="30%" cy="107%">
+                    <stop stop-color="#fdf497" offset="0"></stop>
+                    <stop stop-color="#fdf497" offset="0.05"></stop>
+                    <stop stop-color="#fd5949" offset="0.45"></stop>
+                    <stop stop-color="#d6249f" offset="0.6"></stop>
+                    <stop stop-color="#285AEB" offset="0.9"></stop>
+                  </radialgradient>
+                  <path fill-rule="evenodd" fill="#211540" d="M15.281,21.499 L7.219,21.499 C3.508,21.499 0.500,18.491 0.500,14.781 L0.500,6.717 C0.500,3.007 3.508,-0.001 7.219,-0.001 L15.281,-0.001 C18.991,-0.001 22.000,3.007 22.000,6.717 L22.000,14.781 C22.000,18.491 18.991,21.499 15.281,21.499 ZM19.984,6.717 C19.984,4.125 17.874,2.014 15.281,2.014 L7.219,2.014 C4.625,2.014 2.515,4.125 2.515,6.717 L2.515,14.781 C2.515,17.373 4.625,19.484 7.219,19.484 L15.281,19.484 C17.874,19.484 19.984,17.373 19.984,14.781 L19.984,6.717 ZM17.028,5.687 C16.632,5.687 16.312,5.367 16.312,4.972 C16.312,4.576 16.632,4.255 17.028,4.255 C17.424,4.255 17.744,4.576 17.744,4.972 C17.744,5.367 17.424,5.687 17.028,5.687 ZM11.250,16.124 C8.282,16.124 5.875,13.717 5.875,10.750 C5.875,7.782 8.282,5.375 11.250,5.375 C14.218,5.375 16.625,7.782 16.625,10.750 C16.625,13.717 14.218,16.124 11.250,16.124 ZM11.250,7.391 C9.398,7.391 7.891,8.897 7.891,10.750 C7.891,12.601 9.398,14.109 11.250,14.109 C13.102,14.109 14.609,12.601 14.609,10.750 C14.609,8.897 13.102,7.391 11.250,7.391 Z"></path>
+                </svg></a></div>
+          </div>
+          <div class="footer__right-bottom">
+            <div class="footer__copy"><img src="https://affhub.net/app/themes/affhub/assets/img/svg/logo.svg" alt="">© Affhub 2019 - 2021. 
+All rights reserved.
+            </div>
+            <div class="footer__lang js-show-popup" data-target="#order-popup">
+              <div class="lang"><i class="fico fico-lang"></i>
+                <p class="lang__text">Change the website language</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <div class="popup js-popup-init active">
+          <div class="popup__wrap">
+            <div class="popup__close js-close"><img src="img/svg/close.svg" alt="close"></div>
+            <div class="popup__content">
+              <div class="popup__left">
+                <h4 class="popup__title">Select the language to be displayed on the site</h4>
+              </div>
+              <div class="popup__right">
+                <div class="dropdown popup__dropdown">
+                  <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/index.html" data-lang="/index.html"><img src="img/svg/russia.svg" alt="russia">Russian</a></li>
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/english/" data-lang="/english/"><img src="img/svg/english.svg" alt="english">English</a></li>
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/georgian/" data-lang="/georgian/"><img src="img/svg/georgia.svg" alt="georgia">Georgian</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup js-popup" id="order-popup">
+          <div class="popup__wrap">
+            <div class="popup__close js-close"><img src="img/svg/close.svg" alt="close"></div>
+            <div class="popup__content">
+              <div class="popup__left">
+                <h4 class="popup__title">Select the language to be displayed on the site</h4>
+              </div>
+              <div class="popup__right">
+                <div class="dropdown popup__dropdown">
+                  <button class="btn dropdown-toggle" id="dropdownMenuButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select language</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/index.html" data-lang="/index.html"><img src="img/svg/russia.svg" alt="russia">Russian</a></li>
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/english/" data-lang="/english/"><img src="img/svg/english.svg" alt="english">English</a></li>
+                    <li><a class="js-change-lang" href="https://affhub.net/affhubmeetuptb/georgian/" data-lang="/georgian/"><img src="img/svg/georgia.svg" alt="georgia">Georgian</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="overlay js-overlay active"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

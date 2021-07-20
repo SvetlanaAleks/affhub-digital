@@ -1,0 +1,68 @@
+.team
+	padding: 50px 0
+	+r(1360)
+		padding: 40px 0
+	+r(639)
+		padding: 30px 0
+	&__title
+		text-align: center
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-size: 32px
+		line-height: 100%
+		margin-bottom: 40px
+		font-weight: 600
+		padding-bottom: 2px
+		+r(1360)
+			font-size: 30px
+		+r(1023)
+			margin-bottom: 30px
+			font-size: 28px
+		+r(767)
+			margin-bottom: 20px
+			font-size: 26px
+	&__list
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		+r(480)
+			display: block
+
+.crewman
+	display: flex
+	align-items: center
+	+r(900)
+		flex-direction: column
+		text-align: center
+	+r(480)
+		+nlt
+			margin-bottom: 20px
+	&__photo
+		width: 120px
+		border-radius: 50%
+		overflow: hidden
+		margin-right: 30px
+		+r(1023)
+			margin-right: 20px
+			width: 100px
+		+r(900)
+			margin: auto
+			margin-bottom: 15px
+	&__name
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 600
+		font-size: 18px
+		line-height: 22px
+		color: #251440
+		margin-bottom: 4px
+	&__post
+		color: #9483AB
+		font-size: 16px
+		line-height: 21px
+		margin-bottom: 4px
+	&__link
+		color: #FF579E
+		font-size: 16px
+		line-height: 21px
+		text-decoration: underline
+		&:hover
+			text-decoration: none

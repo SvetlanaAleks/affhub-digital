@@ -1,0 +1,127 @@
+{
+  "locale": "english",
+  "main": {
+    "everad": "With partnership and support",
+    "btn": "Check-in"
+  },
+  "menu": {
+    "news": "News",
+    "interview": "Interview",
+    "konkursy": "Contests",
+    "events": "CPA events",
+    "arbitrazh": "Traffic arbitrage",
+    "novichkov": "For beginners",
+    "istochnikitrafika": "Sources of traffic",
+    "servisy": "Services",
+    "vertikali": "Verticals and niches",
+    "cases": "Cases",
+    "social": "Social networks",
+    "aboutstudy": "Training",
+    "events_2": "Events",
+    "kalendarcpa": "Events calendar",
+    "vakansii": "Vakansii",
+    "contest": "Lay on three cars"
+  },
+  "header": {
+    "title": "First in Georgia!",
+    "desc": "The top affiliate event",
+    "month": "June",
+    "time": "At 1pm on Friday",
+    "place": "Tbilisi, Republic Multifunctional Event&nbsp;Space",
+    "map": "On the map"
+  },
+  "event_description": {
+    "title_main": "The description of event:",
+    "title_1": "Why do you think you need to be on Affhub?",
+    "desc_1": "Affhub is the arbitration community which affiliates with affiliated marketing members throughout the world. Our objectives are maximizing the usefulness of the reports and networking on the hot afterparties. ",
+    "desc_2": "How would you like to get the actual tips and secrets of the top affiliated marketing? Would you like to make new acquaintance in this area? Are you looking for a team or profitable acquaintance?  Come to AFFHUB!",
+    "title_2": "Affhub Meetup Tbilisy",
+    "desc_3": "Is a prominent event for webmasters and top-affiliates of Georgia. This includes  reports from tops, advanced networking and pleasant afterparty with smoky hookahs and all-in  bar entertainment.",
+    "btn": "Add a reminder to your calendar"
+  },
+  "entertaining_program": {
+    "title": "Affhub Meetup Tbilisi is:",
+    "text_1": "Meetup + Afterparty",
+    "text_2": "Four reports from affiliated marketing tops ",
+    "text_3": "Entertainment",
+    "text_4": "TOP niches: Gambling, Nutra, Crypto and PDL",
+    "text_5": "Advanced networking",
+    "text_6": "Smoky hookahs and all-in bar entertainment "
+  },
+  "speakers": {
+    "name": "Secret Speaker",
+    "post": "Company name and position",
+    "title": "Topic",
+    "name_1": "Alexander Klim",
+    "post_1": "Owner of Masons traffic team",
+    "title_1": "UAC is the actual alternative to FB traffic in Gambling niche",
+    "name_2": "Denis Kharlamov",
+    "post_2": "Owner of XLeads team",
+    "title_2": "Is it myth or reality the Nutra niche in FB?",
+    "name_3": "Alexander Boiko",
+    "post_3": "СЕО SalesDoubler",
+    "title_3": "Profitable case of traffic monetization through GDN outfits in Google Ads and their API processing"
+  },
+  "schedule": {
+    "title_main": "Dive into world of traffic together with Affhub Meetup",
+    "subtitle": "Timing",
+    "item_1": "Registration. Welcome drink",
+    "item_2": "Report from Alexander Boiko",
+    "item_3": "Report from Alexander Klim",
+    "item_4": "Coffee Break",
+    "item_5": "Report from Denis Kharlamov",
+    "item_6": "Report from Secret Speaker",
+    "item_7": "Networking Party"
+  },
+  "team": {
+    "title": "Be in touch with our team for cooperation",
+    "name_1": "Sapogova Olga",
+    "name_2": "Maslova Viktorija",
+    "name_3": "Burjak Evgeny"
+  },
+  "gallery": {
+    "title": "Here is a spot/place for your mood and emotions!",
+    "desc": "Photo report will be here after the event. Keep for updates.",
+    "btn": "Pictures from events.",
+    "link": "Go to album",
+    "city_1": "Kharkov",
+    "city_2": "Dnipro",
+    "city_3": "Odessa",
+    "city_4": "Kyiv",
+    "city_5": "Lviv",
+    "city_6": "St. Petersburg",
+    "city_7": "Novgorod",
+    "city_8": "Rostov-on-Don"
+  },
+  "sponsors": {
+    "title_1": "GENERAL SPONSOR",
+    "title_2": "Partners"
+  },
+  "check_in": {
+    "title": "Check in",
+    "desc": "Leave your contacts, and we will keep you informed about upcoming events, and also, we will encourage you with pleasant bonuses as a member of our community.",
+    "label_1": "Name",
+    "label_2": "Phone number",
+    "label_3": "@Telegram",
+    "label_4": "What is your possition in the affiliate industry?",
+    "btn": "Send a request",
+    "success": "Our manager will contact you shortly and tell you the details of the event. To keep abreast of all events and news, subscribe to our telegram channel!",
+    "nickname": "Nickname"
+  },
+  "footer": {
+    "desc": "All materials on the site https://affhub.net are for informational purposes only. We do our best to ensure that all published information is as accurate and complete as possible. <br><br> The administration of the Affhub.net site does not bear any responsibility for any losses, including financial ones, if the submitted materials are misinterpreted or because of the use of incomplete or incorrect information posted on this site.",
+    "partners": "With partnership and support",
+    "link_1": "About us",
+    "link_2": "Confidentiality",
+    "link_3": "Terms of use",
+    "copy": "All rights reserved.",
+    "change_lang": "Change the website language"
+  },
+  "popup": {
+    "title": "Select the language to be displayed on the site",
+    "russia": "Russian",
+    "english": "English",
+    "georgia": "Georgian",
+    "btn": "Select language"
+  }
+}

@@ -1,0 +1,207 @@
+.header
+	background: url('../img/bg_header.png') no-repeat center 130px
+	padding-bottom: 50px
+	+r(1023)
+		padding-bottom: 30px
+		background-size: 1740px
+		background-position: center 90px
+	+r(767)
+		padding-bottom: 0
+		background-position: center 5%
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-top: 33px
+		margin-bottom: 65px
+		+r(767)
+			margin-bottom: 55px
+		+r(480)
+			display: block
+			margin-bottom: 35px
+	&__left
+		+r(480)
+			margin-bottom: 20px
+	&__logo
+		text-align: center
+		position: relative
+		left: calc(50% - 544px)
+		img
+			margin: auto
+		+r(1249)
+			left: calc(50% - 474px)
+		+r(1023)
+			left: 20px
+		+r(480)
+			left: -8px
+			width: 113%
+			margin-bottom: 10px
+	&__btn
+		outline: none
+		text-decoration: none
+		border: none
+		font-family: "Montserrat", Arial, Helvetica, sans-serif
+		text-align: center
+		color: #fff
+		font-weight: 500
+		font-size: 16px
+		line-height: 20px
+		padding: 20px
+		max-width: 242px
+		width: 100%
+		background: #ff579e
+		border-radius: 50px
+		cursor: pointer
+		transition: all 0.3s
+		display: block
+		margin: auto
+		margin-bottom: 30px
+		+r(1023)
+			margin-bottom: 25px
+		+r(767)
+			padding: 14px
+			margin-bottom: 20px
+		+r(480)
+			max-width: 100%
+	&__title
+		display: block
+		font-weight: 500
+		font-size: 28px
+		line-height: 150%
+		text-align: center
+		max-width: 465px
+		width: 100%
+		margin: auto
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		margin-bottom: 30px
+		+r(1360)
+			font-size: 26px
+		+r(1249)
+			font-size: 24px
+			line-height: 140%
+		+r(1023)
+			font-size: 22px
+			margin-bottom: 25px
+		+r(767)
+			margin-bottom: 20px
+		+r(639)
+			font-size: 20px
+		+r(480)
+			font-size: 18px
+			line-height: 130%
+	&__main
+		padding: 19px
+		border: 1px solid #ED534B
+		border-radius: 3px
+		display: flex
+		align-items: center
+		max-width: 344px
+		width: 100%
+		margin: auto
+		img
+			flex-shrink: 0
+			margin-right: 20px
+		+r(767)
+			padding: 15px
+		+r(639)
+			max-width: 304px
+			img
+				margin-right: 15px
+		+r(480)
+			img
+				width: 25px
+				margin-right: 10px
+	&__info
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-weight: 500
+		font-size: 16px
+		line-height: 150%
+		color: #161032
+		+r(639)
+			font-size: 14px
+			line-height: 140%
+
+.date
+	display: flex
+	align-items: center
+	&__ico
+		flex-shrink: 0
+		margin-right: 30px
+		+r(1249)
+			margin-right: 20px
+		+r(1023)
+			width: 40px
+			margin-right: 15px
+	&__desc
+		display: flex
+		align-items: center
+		+r(639)
+			display: block
+		+r(480)
+			display: flex
+
+	&__text
+		font-weight: bold
+		font-size: 30px
+		line-height: 150%
+		color: #251440
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		span
+			font-weight: normal
+		&:not(:last-of-type)
+			margin-right: 30px
+		+r(1360)
+			font-size: 28px
+			&:not(:last-of-type)
+				margin-right: 20px
+		+r(1249)
+			font-size: 26px
+		+r(1023)
+			font-size: 24px
+		+r(767)
+			font-size: 22px
+		+r(639)
+			line-height: 1
+			&:not(:last-of-type)
+				margin-right: 0
+				margin-bottom: 5px
+		+r(480)
+			&:not(:last-of-type)
+				margin-right: 10px
+				margin-bottom: 0
+
+.place
+	display: flex
+	align-items: center
+	&__ico
+		flex-shrink: 0
+		margin-right: 30px
+		+r(1249)
+			margin-right: 20px
+		+r(1023)
+			width: 40px
+			margin-right: 15px
+	&__text
+		font-weight: bold
+		font-size: 30px
+		color: #251440
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		span
+			font-weight: normal
+			display: block
+			font-size: 20px
+			margin-top: 14px
+		+r(1360)
+			font-size: 28px
+			span
+				font-size: 18px
+				margin-top: 9px
+		+r(1249)
+			font-size: 26px
+		+r(1023)
+			font-size: 24px
+			span
+				font-size: 16px
+				margin-top: 5px
+		+r(767)
+			font-size: 22px

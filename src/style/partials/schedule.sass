@@ -1,0 +1,93 @@
+.schedule
+	padding-top: 50px
+	padding-bottom: 50px
+	+r(1360)
+		padding: 40px 0
+	+r(639)
+		padding: 30px 0
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 59px
+		+r(1249)
+			margin-bottom: 50px
+		+r(639)
+			margin-bottom: 30px
+	&__btn
+		max-width: 324px
+		&--mob
+			display: none
+		+r(900)
+			margin: auto
+			&--desc
+				display: none
+			&--mob
+				display: block
+		+r(767)
+			padding: 14px
+		+r(480)
+			max-width: 100%
+	&__list
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		+r(1023)
+			flex-wrap: wrap
+			align-items: stretch
+		+r(900)
+			margin-bottom: 30px
+
+.schedule-item
+	background: rgba(22, 16, 50, 0.05)
+	border-radius: 10px
+	padding: 20px 12px
+	text-align: center
+	font-weight: 500
+	max-width: 218px
+	width: 100%
+	+r(1249)
+		max-width: 190px
+	+r(1023)
+		max-width: calc(100%/3 - 10px)
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&:last-of-type
+			align-self: flex-start
+		&:not(:nth-child(-n+3))
+			margin-top: 25px
+	+r(639)
+		padding: 15px 12px
+		text-align: left
+		max-width: 100%
+		flex-direction: row-reverse
+		justify-content: flex-end
+		&:not(:nth-child(-n+1))
+			margin-top: 15px
+	&__ttl
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif
+		font-size: 20px
+		line-height: 24px
+		color: #251440
+		margin-bottom: 10px
+		+r(1249)
+			font-size: 18px
+			line-height: 22px
+			margin-bottom: 5px
+		+r(639)
+			margin-bottom: 0
+	&__time
+		font-size: 18px
+		line-height: 130%
+		color: #8E819F
+		+r(1249)
+			font-size: 17px
+		+r(639)
+			flex-shrink: 0
+			width: 120px
+			margin-right: 15px
+		+r(480)
+			width: 60px
+			margin-right: 10px

@@ -1,0 +1,24 @@
+- var TEAM = LANG.team;
+
+section.team
+	.wrapper
+		h2.team__title.title-color!= TEAM.title
+		.team__list
+			.crewman
+				img.crewman__photo(src="img/olga.png", alt="Сапогова Ольга")
+				.crewman__info
+					p.crewman__name!= TEAM.name_1
+					p.crewman__post Head of Affhub
+					a.crewman__link(href="https://t.me/Olya_cpa") @Olya_cpa
+			.crewman
+				img.crewman__photo(src="img/viktoria.png", alt="Маслова Виктория")
+				.crewman__info
+					p.crewman__name!= TEAM.name_2
+					p.crewman__post Event of Affhub
+					a.crewman__link(href="https://t.me/Viktoriia_cpa") @Viktoriia_cpa
+			.crewman
+				img.crewman__photo(src="img/evgeniy.png", alt="Буряк Евгений")
+				.crewman__info
+					p.crewman__name!= TEAM.name_3
+					p.crewman__post Affiliate of Affhub
+					a.crewman__link(href="https://t.me/Yevhenii_cpa") @Yevhenii_cpa
