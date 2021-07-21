@@ -241,3 +241,23 @@ svg {
     padding-left: 15px;
   }
 }
+
+//overlay
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 89;
+  background: transparentize(#000, 0.5);
+  transition: all 0.5s;
+  pointer-events: none;
+  &.active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}

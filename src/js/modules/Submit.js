@@ -1,55 +1,19 @@
 var Submit = (function () {
   var errorMessages = {
-    english: {
-      name: {
-        regExp: /([A-Za-zА-ЯЄІЇа-яєії])+$/,
-        empty: "Name is required",
-        notValid: "Invalid name",
-      },
-      phone: {
-        regExp: /[0-9+()-\s]{5,}/,
-        empty: "Phone number required",
-        notValid: "Invalid phone number",
-      },
-      nickname: {
-        regExp: /^\S*$/,
-        empty: "Login required",
-        notValid: "Incorrect login",
-      },
+    name: {
+      regExp: /([A-Za-zА-ЯЄІЇа-яєії])+$/,
+      empty: "Имя обязательно",
+      notValid: "Некорректное имя",
     },
-    ru: {
-      name: {
-        regExp: /([A-Za-zА-ЯЄІЇа-яєії])+$/,
-        empty: "Имя обязательно",
-        notValid: "Некорректное имя",
-      },
-      phone: {
-        regExp: /[0-9+()-\s]{5,}/,
-        empty: "Номер телефона обязателен",
-        notValid: "Некорректный номер телефона",
-      },
-      nickname: {
-        regExp: /^\S*$/,
-        empty: "Логин обязателен",
-        notValid: "Некорректный логин",
-      },
+    phone: {
+      regExp: /[0-9+()-\s]{5,}/,
+      empty: "Номер телефона обязателен",
+      notValid: "Некорректный номер телефона",
     },
-    georgian: {
-      name: {
-        regExp: /([A-Za-zА-ЯЄІЇа-яєії])+$/,
-        empty: "სახელი აუცილებელია",
-        notValid: "სახელი არასწორია",
-      },
-      phone: {
-        regExp: /[0-9+()-\s]{5,}/,
-        empty: "ტელეფონის ნომერი ან დეპეშის შესვლა აუცილებელია",
-        notValid: "Არასწორი მობილურის ნომერი",
-      },
-      nickname: {
-        regExp: /^\S*$/,
-        empty: "შესვლა აუცილებელია",
-        notValid: "Არასწორი ლოგინი",
-      },
+    nickname: {
+      regExp: /^\S*$/,
+      empty: "Логин обязателен",
+      notValid: "Некорректный логин",
     },
   };
   var form = $("#registration_form");
@@ -66,14 +30,14 @@ var Submit = (function () {
         } else {
           inputLocation.val("affhub.net/affhubmeetuptb");
           $.ajax({
-            url: "https://api.apispreadsheets.com/data/12376/",
+            url: "https://api.apispreadsheets.com/data/15700/",
             type: "POST",
             contentType: false,
             processData: false,
             data: new FormData(this),
             success: function success() {
-              $(".hide").hide();
-              $(".check-in__success").show();
+              $("#registration_form").hide();
+              $(".popup__success").show();
             },
             error: function () {
               alert("error");
@@ -102,10 +66,10 @@ var Submit = (function () {
       var value = input.val();
       var name = input.attr("name");
 
-      if (!errorMessages[EVERlocale][name]) {
+      if (!errorMessages[name]) {
         return false;
       }
-      var _errorMessages$name = errorMessages[EVERlocale][name],
+      var _errorMessages$name = errorMessages[name],
         regExp = _errorMessages$name.regExp,
         empty = _errorMessages$name.empty,
         notValid = _errorMessages$name.notValid;
@@ -132,8 +96,8 @@ var Submit = (function () {
         var name = input.attr("name");
         var group = "";
 
-        if (errorMessages[EVERlocale][name]) {
-          group = errorMessages[EVERlocale][name].group;
+        if (errorMessages[name]) {
+          group = errorMessages[name].group;
         }
 
         var error = Submit.validateInput(input);

@@ -2,7 +2,7 @@ section.schedule
 	.wrapper
 		.schedule__top
 			h2.schedule__title.title-main Программа и тайминг:
-			button.btn-main.schedule__btn.schedule__btn--desc Регистрируйся сейчас
+			button.btn-main.schedule__btn.schedule__btn--desc.js-show-popup(data-target="#order-popup") Регистрируйся сейчас
 		.schedule__list
 			.schedule-item
 				p.schedule-item__ttl Welcome Drink
@@ -19,4 +19,4 @@ section.schedule
 			.schedule-item
 				p.schedule-item__ttl Networking Time
 				p.schedule-item__time 21:00 - 22:30
-		button.btn-main.schedule__btn.schedule__btn--mob Регистрируйся сейчас
+		button.btn-main.schedule__btn.schedule__btn--mob.js-show-popup(data-target="#order-popup") Регистрируйся сейчас

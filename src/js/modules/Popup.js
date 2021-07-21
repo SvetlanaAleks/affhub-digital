@@ -18,7 +18,6 @@ const Popup = (function () {
       $(".js-close").click(function (e) {
         e.preventDefault();
         popUpBlock.removeClass("active");
-        $(".js-popup-init").removeClass("active");
         overlay.removeClass("active");
       });
     },

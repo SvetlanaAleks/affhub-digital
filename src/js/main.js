@@ -3,6 +3,8 @@
 import objectFitImages from "object-fit-images";
 import Controls from "./modules/Controls";
 import Menu from "./modules/Menu";
+import Popup from "./modules/Popup";
+import Submit from "./modules/Submit";
 
 function youtubeShowVideo() {
   var i, c, y, v, n;
@@ -41,4 +43,6 @@ $(function () {
   youtubeShowVideo();
   Controls.init();
   Menu.init();
+  Popup.init();
+  Submit.init();
 });

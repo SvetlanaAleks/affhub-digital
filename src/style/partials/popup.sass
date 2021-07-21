@@ -1,0 +1,196 @@
+.popup
+	overflow-x: hidden
+	overflow-y: auto
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	position: fixed
+	z-index: 120
+	display: none
+	&.active
+		display: flex
+	&__close
+		position: absolute
+		top: 47px
+		right: 30px
+		width: 24px
+		cursor: pointer
+		z-index: 1
+		+r(890)
+			right: 20px
+			top: 40px
+		+r(480)
+			top: 10px
+			width: 17px
+			right: 10px
+	&__wrap
+		position: relative
+		width: 100%
+		max-width: 620px
+		margin: auto
+		padding: 20px 0
+		+r(1023)
+			width: 600px
+		+r(639)
+			max-width: 90%
+			width: 480px
+		+r(480)
+			max-width: 100%
+			padding: 0
+	&__content
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 70px 120px
+		border-radius: 5px
+		border: 3px solid #fd579d
+		background: #161035
+	&__success
+		display: none
+		color: white
+		text-align: center
+		font-size: 16px
+		line-height: 140%
+
+
+
+.form_error 
+	color: #ff3500
+	font-size: 12px
+	font-style: italic
+	margin-top: 3px
+
+.form 
+	max-width: 680px
+	width: 100%
+	margin: auto
+	&__btn
+		background-color: #fd579d
+		color: white
+.form__title 
+	margin-top: 0
+	text-align: center
+	font-weight: 500
+	font-size: 30px
+	margin-bottom: 30px
+	font-family: Montserrat, sans-serif
+	color: white
+
+.form__input-wrap 
+	position: relative
+
+.form__input-wrap:not(:last-of-type) 
+	margin-bottom: 40px
+
+.form__input 
+	width: 100%
+	padding: 8px ​10px 10px
+	box-sizing: border-box
+	background: 0 0
+	font-size: 16px
+	color: #fff
+	outline: 0
+	border: none
+	height: 30px
+	border-radius: 0
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+	-webkit-transition: all 0.3s
+	transition: all 0.3s
+
+.form__input::-webkit-input-placeholder 
+	font-family: "IBM Plex Sans", sans-serif
+	font-size: 16px
+	color: #fff
+
+.form__input:-ms-input-placeholder 
+	font-family: "IBM Plex Sans", sans-serif
+	font-size: 16px
+	color: #fff
+
+.form__input::-ms-input-placeholder 
+	font-family: "IBM Plex Sans", sans-serif
+	font-size: 16px
+	color: #fff
+
+.form__input:focus 
+	border-bottom: 1px solid #ff579e
+
+.form__input:focus ~ .form__label 
+	font-size: 14px
+	color: #777
+	top: -15px
+
+.form__input.active,
+.form__input:focus 
+	border-bottom: 1px solid #ff579e
+
+.form__input.active ~ .form__label,
+.form__input:focus ~ .form__label 
+	font-size: 14px
+	color: #777
+	top: -15px
+
+.form__label 
+	color: #fff
+	position: absolute
+	left: 0
+	top: 8px
+	-webkit-transition: all 0.3s
+	transition: all 0.3s
+	font-size: 16px
+	pointer-events: none
+
+.form__btn 
+	font-size: 20px
+	margin-top: 43px
+
+.form__select 
+	width: 100%
+
+@media screen and (max-width: 1023px) 
+	body 
+	 background-size: auto
+	 background-position: top center
+	
+	.form__input-wrap:not(:last-of-type) 
+	 margin-bottom: 30px
+	
+	.form__btn 
+	 margin-top: 30px
+	
+
+@media screen and (max-width: 767px) 
+	.form__btn 
+	 font-size: 18px
+	
+	.form__title 
+	 font-size: 25px
+	
+	.form 
+	 padding: 30px
+	
+
+@media screen and (max-width: 480px) 
+	.form__title 
+	 font-size: 20px
+	
+	.form__input:focus ~ .form__label 
+	 top: -8px
+	
+	.form__input 
+	 font-size: 15px
+	
+	.form__input::-webkit-input-placeholder 
+	 font-size: 15px
+	
+	.form__input:-ms-input-placeholder 
+	 font-size: 15px
+	
+	.form__input::-ms-input-placeholder 
+	 font-size: 15px
+	
+	.form__label 
+	 font-size: 12px
+	

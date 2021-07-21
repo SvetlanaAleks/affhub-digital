@@ -125,7 +125,7 @@
           </div>
         </div>
         <div class="header__logo"><img src="/img/svg/digital-meetup-logo.svg" alt=""></div>
-        <button class="header__btn">Регистрация</button>
+        <button class="header__btn js-show-popup" data-target="#order-popup">Регистрация</button>
         <h1 class="header__title title-color">Погружение в нишу CPA для&nbsp;маркетологов и таргетологов</h1>
         <div class="header__main"><img src="/img/svg/ico.svg" alt="">
           <p class="header__info">Количество мест ограничено<br>Билеты платные</p>
@@ -189,7 +189,7 @@
       <div class="wrapper">
         <div class="schedule__top">
           <h2 class="schedule__title title-main">Программа и тайминг:</h2>
-          <button class="btn-main schedule__btn schedule__btn--desc">Регистрируйся сейчас</button>
+          <button class="btn-main schedule__btn schedule__btn--desc js-show-popup" data-target="#order-popup">Регистрируйся сейчас</button>
         </div>
         <div class="schedule__list">
           <div class="schedule-item">
@@ -213,7 +213,7 @@
             <p class="schedule-item__time">21:00 - 22:30</p>
           </div>
         </div>
-        <button class="btn-main schedule__btn schedule__btn--mob">Регистрируйся сейчас</button>
+        <button class="btn-main schedule__btn schedule__btn--mob js-show-popup" data-target="#order-popup">Регистрируйся сейчас</button>
       </div>
     </section>
     <section class="team">
@@ -304,6 +304,42 @@
         </div>
       </div>
     </footer>
+    <div class="popup js-popup" id="order-popup">
+      <div class="popup__wrap">
+        <div class="popup__close js-close"><img src="/img/svg/close.svg" alt="close"></div>
+        <div class="popup__content">
+          <div class="popup__success">
+            <h2 class="popup__subtitle">Спасибо! В ближайшее время с тобой свяжется наш менеджер и расскажет детали мероприятия. Чтобы быть в курсе всех событий и новостей подписывайся на наш канал в телеграм!</h2>
+          </div>
+          <form class="form" id="registration_form" action="/" method="post">
+            <h2 class="form__title">Регистрация</h2>
+            <input class="js-input-location" type="hidden" name="location">
+            <div class="form__input-wrap">
+              <input class="form__input js-input" type="text" name="name" required="">
+              <label class="form__label js-label">Имя</label>
+              <div class="form_error"></div>
+            </div>
+            <div class="form__input-wrap">
+              <input class="form__input js-input" type="email" name="email" required="">
+              <label class="form__label js-label">Email</label>
+              <div class="form_error"></div>
+            </div>
+            <div class="form__input-wrap">
+              <input class="form__input js-input" type="tel" name="phone" required="">
+              <label class="form__label js-label">Номер телефона</label>
+              <div class="form_error"></div>
+            </div>
+            <div class="form__input-wrap">
+              <input class="form__input js-input" id="nickname" type="text" name="nickname" required="">
+              <label class="form__label js-label">Никнейм</label>
+              <div class="form_error"></div>
+            </div>
+            <button class="form__btn btn-main js-reg-event" id="reg_btn" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="overlay js-overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
